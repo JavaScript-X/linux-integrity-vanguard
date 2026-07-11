@@ -29,7 +29,7 @@ Exit criterion: contributors can explain what the system can and cannot claim.
 - [~] Define a versioned challenge and evidence-envelope schema (validated domain
   types complete; signed wire envelope pending).
 - [~] Implement deterministic encoding with strict size limits (encoding contract
-  and bounded challenge codec complete; report codec pending).
+  and bounded challenge/report codecs complete; signed envelope pending).
 - [ ] Implement signing and verification behind interfaces.
 - [ ] Add nonce, expiry, and replay validation.
 - [~] Build a fixture collector and a three-outcome policy engine (initial policy
@@ -97,7 +97,7 @@ documented human review processes.
 ## Immediate backlog
 
 1. Define the challenge and evidence-envelope domain types.
-2. Implement and test the bounded version 1 wire codec.
-3. Implement the unsigned report codec and golden vectors.
-4. Implement signature verification and replay protection.
-5. Complete the Phase 1 fixture-based vertical slice.
+2. Implement the signed report envelope and Ed25519 verification.
+3. Add expiry and replay protection.
+4. Build a deterministic fixture collector.
+5. Complete the Phase 1 end-to-end demo.
