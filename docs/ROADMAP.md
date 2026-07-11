@@ -30,7 +30,8 @@ Exit criterion: contributors can explain what the system can and cannot claim.
   types complete; signed wire envelope pending).
 - [~] Implement deterministic encoding with strict size limits (encoding contract
   and bounded challenge/report codecs complete; signed envelope pending).
-- [ ] Implement signing and verification behind interfaces.
+- [~] Implement signing and verification behind interfaces (domain-separated
+  Ed25519 primitives complete; signed transport codec and key registry pending).
 - [ ] Add nonce, expiry, and replay validation.
 - [~] Build a fixture collector and a three-outcome policy engine (initial policy
   complete; fixture collector pending).
