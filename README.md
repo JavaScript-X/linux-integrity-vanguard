@@ -4,6 +4,11 @@ Linux Integrity Vanguard is a transparent research prototype for evaluating the
 integrity of Linux game clients. It combines user-space evidence collection,
 optional eBPF telemetry, signed reports, and server-side policy evaluation.
 
+The motivating use case is Linux support for games protected by kernel-level
+anti-cheat. It is **not** a replacement for, emulator of, or bypass for Riot
+Vanguard. Making VALORANT accept Linux requires Riot's explicit support and
+server-side trust integration; see the [feasibility boundary](docs/FEASIBILITY.md).
+
 > [!IMPORTANT]
 > This project is an experimental integrity signal, not proof that a client is
 > cheat-free. It must not be used as the sole basis for punitive decisions.
@@ -35,8 +40,8 @@ pipeline is the next milestone.
 | eBPF sensor | Optionally emit narrowly scoped process and file events. |
 
 See [Architecture](docs/ARCHITECTURE.md), [Threat model](docs/THREAT_MODEL.md),
-[Roadmap](docs/ROADMAP.md), and [architecture decisions](docs/adr/README.md) for
-the working specification.
+[Roadmap](docs/ROADMAP.md), [VALORANT feasibility](docs/FEASIBILITY.md), and
+[architecture decisions](docs/adr/README.md) for the working specification.
 
 ## Development
 

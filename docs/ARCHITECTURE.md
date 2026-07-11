@@ -72,3 +72,12 @@ recorded in an architecture decision record before implementation.
 
 The user-space mode remains supported so development and policy behavior never
 depend on privileged kernel access.
+
+## Future hypervisor boundary
+
+A hypervisor or co-kernel is not part of the initial architecture. If later
+research demonstrates that user-space and eBPF signals are insufficient for an
+owned test workload, a separate ADR must define the hardware trust chain, device
+ownership, Linux coexistence model, recovery path, and evidence exposed to the
+server. That component must remain optional and cannot be represented as VALORANT
+or Vanguard compatibility without Riot authorization.

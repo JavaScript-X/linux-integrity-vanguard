@@ -3,6 +3,17 @@
 This roadmap favors a testable end-to-end path before privileged or invasive
 collection. Status markers are: `[ ]` planned, `[~]` active, and `[x]` complete.
 
+## Phase -1 — Product and authorization gate
+
+- [x] Document why a local Vanguard replacement cannot make VALORANT trust Linux.
+- [x] Separate anti-cheat research from impersonation or compatibility bypasses.
+- [ ] Select the controlled sample game used for end-to-end development.
+- [ ] If VALORANT compatibility remains a goal, obtain a Riot-supported technical
+  and authorization path before representing the project as compatible.
+
+Exit criterion: the project has an owned test workload or an authorized game-server
+integration, with permission to modify both sides of the trust protocol.
+
 ## Phase 0 — Project foundation
 
 - [x] Define architecture and trust boundaries.
@@ -58,6 +69,17 @@ documented resource bounds.
 
 Exit criterion: disabling or lacking eBPF never breaks the base agent and only
 changes declared evidence confidence.
+
+## Phase 4B — Optional hypervisor research
+
+- [ ] Define the research question and show why simpler signals cannot answer it.
+- [ ] Write a dedicated threat model and architecture decision record.
+- [ ] Choose a narrow hardware target and establish a recoverable test machine.
+- [ ] Prototype isolation and attestation against an owned test workload.
+- [ ] Measure boot, runtime, device, and compatibility impact on the Linux host.
+
+Exit criterion: the monitor produces independently verified measurements without
+claiming third-party game compatibility or bypassing environment checks.
 
 ## Phase 5 — Operational readiness
 
