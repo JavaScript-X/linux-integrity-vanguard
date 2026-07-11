@@ -26,7 +26,8 @@ Exit criterion: contributors can explain what the system can and cannot claim.
 
 ## Phase 1 — Protocol vertical slice
 
-- [ ] Define a versioned challenge and evidence-envelope schema.
+- [~] Define a versioned challenge and evidence-envelope schema (validated domain
+  types complete; signed wire envelope pending).
 - [~] Implement deterministic encoding with strict size limits (encoding contract
   accepted in ADR-0002; codec pending).
 - [ ] Implement signing and verification behind interfaces.
