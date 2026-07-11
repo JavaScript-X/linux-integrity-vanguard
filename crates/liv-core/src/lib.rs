@@ -8,4 +8,5 @@
 pub mod crypto;
 pub mod policy;
 pub mod protocol;
+pub mod verifier;
 pub mod wire;

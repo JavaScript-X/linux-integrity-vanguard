@@ -32,10 +32,12 @@ Exit criterion: contributors can explain what the system can and cannot claim.
   and bounded challenge/report codecs complete; signed envelope pending).
 - [~] Implement signing and verification behind interfaces (domain-separated
   Ed25519 primitives complete; signed transport codec and key registry pending).
-- [ ] Add nonce, expiry, and replay validation.
+- [~] Add nonce, expiry, and replay validation (server-clock checks and nonce-store
+  interface complete; persistent atomic storage pending).
 - [~] Build a fixture collector and a three-outcome policy engine (initial policy
   complete; fixture collector pending).
-- [ ] Cover valid, expired, replayed, malformed, and unsupported reports.
+- [~] Cover valid, expired, replayed, malformed, and unsupported reports (core
+  cases complete; end-to-end and fuzz coverage pending).
 
 Exit criterion: a local demo creates, verifies, and evaluates a fixture report with
 no privileged access, and automated tests cover failure paths.
