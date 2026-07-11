@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main, project-foundation]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Format, lint, and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Show toolchain
+        run: rustc --version --verbose
+
+      - name: Check formatting
+        run: cargo fmt --all --check
+
+      - name: Lint all targets
+        run: cargo clippy --workspace --all-targets --all-features -- -D warnings
+
+      - name: Test all targets
+        run: cargo test --workspace --all-targets --all-features

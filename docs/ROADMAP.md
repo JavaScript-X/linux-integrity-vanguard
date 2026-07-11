@@ -86,7 +86,8 @@ claiming third-party game compatibility or bypassing environment checks.
 ## Phase 5 — Operational readiness
 
 - [ ] Add reproducible builds, SBOM, artifact signing, and release checksums.
-- [ ] Add CI for formatting, linting, tests, dependency audit, and license policy.
+- [~] Add CI for formatting, linting, tests, dependency audit, and license policy
+  (formatting, linting, and tests complete; supply-chain checks pending).
 - [ ] Publish deployment, key rotation, incident, and appeal runbooks.
 - [ ] Commission an independent privacy and security review.
 
@@ -97,6 +98,6 @@ documented human review processes.
 
 1. Define the challenge and evidence-envelope domain types.
 2. Implement and test the bounded version 1 wire codec.
-3. Add continuous integration checks for the Rust workspace.
+3. Implement the unsigned report codec and golden vectors.
 4. Implement signature verification and replay protection.
 5. Complete the Phase 1 fixture-based vertical slice.
