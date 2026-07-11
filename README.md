@@ -42,8 +42,16 @@ the working specification.
 
 Core components will use stable Rust as recorded in
 [ADR-0001](docs/adr/0001-rust-for-core-components.md). The exact bootstrap and
-quality-check commands will be added with the first verified workspace scaffold.
-Until then, see [CONTRIBUTING.md](CONTRIBUTING.md) for change standards.
+quality-check commands are:
+
+```sh
+cargo fmt --all --check
+cargo clippy --workspace --all-targets --all-features -- -D warnings
+cargo test --workspace --all-targets --all-features
+```
+
+The pinned toolchain is installed automatically by `rustup`. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for change standards.
 
 ## Responsible use
 

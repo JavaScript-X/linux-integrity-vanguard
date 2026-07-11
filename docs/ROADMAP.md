@@ -70,8 +70,8 @@ documented human review processes.
 
 ## Immediate backlog
 
-1. Install the stable Rust toolchain and record the minimum supported version.
-2. Write ADR-0002 for protocol encoding and signing primitives.
-3. Scaffold the workspace and continuous integration checks.
+1. Write ADR-0002 for protocol encoding and signing primitives.
+2. Add continuous integration checks for the scaffolded Rust workspace.
+3. Define the challenge and evidence-envelope domain types.
 4. Implement the Phase 1 fixture-based vertical slice.
 5. Revisit roadmap estimates after the vertical slice exposes real complexity.
