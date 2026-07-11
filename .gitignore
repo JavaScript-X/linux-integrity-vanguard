@@ -1,0 +1,21 @@
+# Rust
+/target/
+**/*.rs.bk
+
+# Coverage and profiling
+/coverage/
+*.profraw
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key

@@ -8,8 +8,8 @@ collection. Status markers are: `[ ]` planned, `[~]` active, and `[x]` complete.
 - [x] Define architecture and trust boundaries.
 - [x] Document threat model, privacy constraints, and non-goals.
 - [x] Publish phased implementation plan and acceptance criteria.
-- [ ] Add contribution, security-reporting, and decision-record templates.
-- [ ] Choose the implementation language and record the decision.
+- [x] Add contribution, security-reporting, and decision-record templates.
+- [x] Choose the implementation language and record the decision.
 
 Exit criterion: contributors can explain what the system can and cannot claim.
 
@@ -70,8 +70,8 @@ documented human review processes.
 
 ## Immediate backlog
 
-1. Decide between Rust and another memory-safe implementation stack.
-2. Write ADR-0001 for protocol encoding and signing primitives.
+1. Install the stable Rust toolchain and record the minimum supported version.
+2. Write ADR-0002 for protocol encoding and signing primitives.
 3. Scaffold the workspace and continuous integration checks.
 4. Implement the Phase 1 fixture-based vertical slice.
 5. Revisit roadmap estimates after the vertical slice exposes real complexity.

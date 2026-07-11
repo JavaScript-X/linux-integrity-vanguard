@@ -35,13 +35,15 @@ pipeline is the next milestone.
 | eBPF sensor | Optionally emit narrowly scoped process and file events. |
 
 See [Architecture](docs/ARCHITECTURE.md), [Threat model](docs/THREAT_MODEL.md),
-and [Roadmap](docs/ROADMAP.md) for the working specification.
+[Roadmap](docs/ROADMAP.md), and [architecture decisions](docs/adr/README.md) for
+the working specification.
 
 ## Development
 
-The implementation toolchain and commands will be added with the first vertical
-slice. Until then, documentation changes should keep Markdown portable and links
-relative to the repository root.
+Core components will use stable Rust as recorded in
+[ADR-0001](docs/adr/0001-rust-for-core-components.md). The exact bootstrap and
+quality-check commands will be added with the first verified workspace scaffold.
+Until then, see [CONTRIBUTING.md](CONTRIBUTING.md) for change standards.
 
 ## Responsible use
 
