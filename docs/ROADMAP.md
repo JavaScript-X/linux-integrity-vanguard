@@ -27,7 +27,8 @@ Exit criterion: contributors can explain what the system can and cannot claim.
 ## Phase 1 — Protocol vertical slice
 
 - [ ] Define a versioned challenge and evidence-envelope schema.
-- [ ] Implement deterministic encoding with strict size limits.
+- [~] Implement deterministic encoding with strict size limits (encoding contract
+  accepted in ADR-0002; codec pending).
 - [ ] Implement signing and verification behind interfaces.
 - [ ] Add nonce, expiry, and replay validation.
 - [~] Build a fixture collector and a three-outcome policy engine (initial policy
@@ -93,8 +94,8 @@ documented human review processes.
 
 ## Immediate backlog
 
-1. Write ADR-0002 for protocol encoding and signing primitives.
-2. Add continuous integration checks for the scaffolded Rust workspace.
-3. Define the challenge and evidence-envelope domain types.
-4. Implement the Phase 1 fixture-based vertical slice.
-5. Revisit roadmap estimates after the vertical slice exposes real complexity.
+1. Define the challenge and evidence-envelope domain types.
+2. Implement and test the bounded version 1 wire codec.
+3. Add continuous integration checks for the Rust workspace.
+4. Implement signature verification and replay protection.
+5. Complete the Phase 1 fixture-based vertical slice.
