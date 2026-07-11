@@ -29,7 +29,7 @@ Exit criterion: contributors can explain what the system can and cannot claim.
 - [~] Define a versioned challenge and evidence-envelope schema (validated domain
   types complete; signed wire envelope pending).
 - [~] Implement deterministic encoding with strict size limits (encoding contract
-  accepted in ADR-0002; codec pending).
+  and bounded challenge codec complete; report codec pending).
 - [ ] Implement signing and verification behind interfaces.
 - [ ] Add nonce, expiry, and replay validation.
 - [~] Build a fixture collector and a three-outcome policy engine (initial policy
