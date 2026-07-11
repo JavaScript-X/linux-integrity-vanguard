@@ -19,7 +19,8 @@ Exit criterion: contributors can explain what the system can and cannot claim.
 - [ ] Implement deterministic encoding with strict size limits.
 - [ ] Implement signing and verification behind interfaces.
 - [ ] Add nonce, expiry, and replay validation.
-- [ ] Build a fixture collector and a three-outcome policy engine.
+- [~] Build a fixture collector and a three-outcome policy engine (initial policy
+  complete; fixture collector pending).
 - [ ] Cover valid, expired, replayed, malformed, and unsupported reports.
 
 Exit criterion: a local demo creates, verifies, and evaluates a fixture report with
